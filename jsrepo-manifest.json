@@ -1,0 +1,76 @@
+[
+	{
+		"name": "crash",
+		"blocks": [
+			{
+				"name": "domain",
+				"directory": "src/crash/domain",
+				"category": "crash",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"example.ts"
+				],
+				"localDependencies": [
+					"typescript/helpers"
+				],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "messages",
+				"directory": "src/crash/messages",
+				"category": "crash",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"message.ts",
+					"other.ts"
+				],
+				"localDependencies": [
+					"crash/domain"
+				],
+				"dependencies": [],
+				"devDependencies": []
+			}
+		]
+	},
+	{
+		"name": "print",
+		"blocks": [
+			{
+				"name": "print",
+				"directory": "src/print",
+				"category": "print",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"print.ts"
+				],
+				"localDependencies": [
+					"crash/messages"
+				],
+				"dependencies": [],
+				"devDependencies": []
+			}
+		]
+	},
+	{
+		"name": "typescript",
+		"blocks": [
+			{
+				"name": "helpers",
+				"directory": "src/typescript",
+				"category": "typescript",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"helpers.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			}
+		]
+	}
+]
